@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     word-wrap: break-word;
     font-size: 30px;
 }
+
+/* STYLING FOR HOME PAGE */
+/* WRITTEN BY MUHAMMAD HAKIM BIN MD NAZRI 2110457 */
+
 .menu-content-top{
     margin: 20px 40px 20px 40px;
     
@@ -116,7 +120,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     border-width: 1px;
 }
 .main-service{
-    /* background-image: url("images/stetoscope.jpg"); */
     background-color: white;
 }
 .main-service-content{
@@ -147,4 +150,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     text-decoration: none;
     padding: 10px;
 }
+
+.feed-container{
+    display: flex;
+    padding: 30px 10px 30px 10px;
+    justify-content: center;
+}
+
+.feed-content{
+    margin: 0px 60px 0px 60px;
+}
+.feed-content iframe{
+    width: 500px;
+    height: 500px;
+}
+.feed-content h3{
+    color: rgb(19, 150, 150);;
+}
+
+.footer-top{
+    background-color: #254DA8;
+    display: flex;
+}
+
+.contact-info{
+    margin: 20px;
+}
+.footer-bottom{
+    background-color: black;
+}
+
+
+/* STYLING FOR CONTACT PAGE */
+/* WRITTEN BY WRITTEN BY MUHAMMAD AMIRUL ASYRAF BIN MOHD KAMAL 2115565 */
+
+
+
+
 
