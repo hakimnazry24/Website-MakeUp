@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/jata_negara.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8aaf8b985e.js" crossorigin="anonymous"></script>
+    <!-- <script src="slideshow.js"></script> -->
 </head>
+
 <body>
     <div class="wrapper">
         <!-- HEADER -->
@@ -36,83 +39,167 @@
             <div class="navbar-content"><a href="index.html"><i class="fa-solid fa-house"></i>&ensp;UTAMA</a></div>
             <div class="navbar-content"><a href="eksa.html">EKSA</a></div>
             <div class="navbar-content"><a href="epsa.html">EPSA</a></div>
-            <div class="navbar-content"><a href="feedback.html"><i class="fa-solid fa-comment"></i>&ensp;FEEDBACK</a></div>
-            <div class="navbar-content"><a href="contact.html"><i class="fa-solid fa-phone"></i>&ensp;HUBUNGI KAMI</a></div>
+            <div class="navbar-content"><a href="feedback.html"><i class="fa-solid fa-comment"></i>&ensp;FEEDBACK</a>
+            </div>
+            <div class="navbar-content"><a href="contact.html"><i class="fa-solid fa-phone"></i>&ensp;HUBUNGI KAMI</a>
+            </div>
         </div>
 
-        <!-- FEATURED CONTENT -->
+        <!-- FEATURED CONTENT-->
         <div class="featured-container">
-            <a href="https://www.moh.gov.my/index.php/pages/view/2933">
-                <img src="images/agenda-nasional-malaysia-sihat.jpeg" alt="agenda-nasional-malaysia-sihat" width="800px">
-            </a>
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/agenda-nasional-malaysia-sihat.jpeg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/kempen-aedes.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/pendaftaran-pengamal-perubatan-tradisional-dan-komplementari.jpg" style="width:100%">
+
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- Slideshow logic -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
 
         <!-- ANNOUCEMENT -->
         <div class="annoucement">
-            <div class="content-title"><h2>PENGUMUMAN</h2></div>
+            <div class="content-title">
+                <h2>PENGUMUMAN</h2>
+            </div>
             <div class="annoucement-content">
                 <div class="annoucement-content-1">
                     <h3>BAYARAN TANPA TUNAI DI FASILITI KKM</h3>
-                    <a href="https://jknselangor.moh.gov.my/htar/pengumuman-awam/659-kutipan-bayaran-tanpa-tunai-di-fasiliti-kkm"><img src="images/bayaran-tanpa-tunai.jpeg" alt="bayaran-tanpa-tunai" width="400px"></a>
+                    <a
+                        href="https://jknselangor.moh.gov.my/htar/pengumuman-awam/659-kutipan-bayaran-tanpa-tunai-di-fasiliti-kkm"><img
+                            src="images/bayaran-tanpa-tunai.jpeg" alt="bayaran-tanpa-tunai" width="400px"></a>
                 </div>
                 <div class="annoucement-content-2">
                     <h3>PEMAKLUMAN PENAMATAN TALIAN FAKS HOSPITAL TUMPAT</h3>
                     <p>Dengan segala hormatnya saya merujuk kepada perkara di atas.
 
-                        Untuk makluman Tuan, penghantaran dan penerimaan dokumen secara faks menunjukkan trend yang semakin menurun serta jarang digunakan dan emel telah digunakan sebagai medium penghantaran maklumat yang lebih cepat dan efisien bagi menggantikan mesin faks.
-                        
-                        Sehubungan dengan itu, Jabatan ini telah memutuskan untuk menamatkan talian faksimili serta-merta berkuatkuasa dari tarikh surat ini (25 Januari 2023) dikeluarkan. Kerjasama Tuan adlah dipohon menggunakan emel jabatan hostumpat@moh.gov.my atau emel pegawai berkaitan sebagai platform rasmi bagi tujuan penghantaran surat atau dokumen ke Jabatan ini.
-                        
-                        Kerjasama dan perhatian Tuan dalam perkara ini amatlah dihargai dan didahului dengan ucapan terima kasih.
-                        
-                        </p>
+                        Untuk makluman Tuan, penghantaran dan penerimaan dokumen secara faks menunjukkan trend yang
+                        semakin menurun serta jarang digunakan dan emel telah digunakan sebagai medium penghantaran
+                        maklumat yang lebih cepat dan efisien bagi menggantikan mesin faks.
+
+                        Sehubungan dengan itu, Jabatan ini telah memutuskan untuk menamatkan talian faksimili
+                        serta-merta berkuatkuasa dari tarikh surat ini (25 Januari 2023) dikeluarkan. Kerjasama Tuan
+                        adlah dipohon menggunakan emel jabatan hostumpat@moh.gov.my atau emel pegawai berkaitan sebagai
+                        platform rasmi bagi tujuan penghantaran surat atau dokumen ke Jabatan ini.
+
+                        Kerjasama dan perhatian Tuan dalam perkara ini amatlah dihargai dan didahului dengan ucapan
+                        terima kasih.
+
+                    </p>
                 </div>
                 <div class="annoucement-content-3">
-                    <h3>MAJLIS TILAWAH AL-QURAN PERINGKAT KEBANGSAAN KEMENTERIAN KESIHATAN MALAYSIA KALI KE-31 TAHUN 2022</h3>
-                    <p>Majlis Tilawah Al-Quran Peringkat Kebangsaan Kementerian Kesihatan Malaysia Kali Ke-31 Tahun 1444H/2022M telah diadakan pada 02 - 04 Oktober 2022 di Hotel Grand Riverview, Kota Bharu, Kelantan.</p>
+                    <h3>MAJLIS TILAWAH AL-QURAN PERINGKAT KEBANGSAAN KEMENTERIAN KESIHATAN MALAYSIA KALI KE-31 TAHUN
+                        2022</h3>
+                    <p>Majlis Tilawah Al-Quran Peringkat Kebangsaan Kementerian Kesihatan Malaysia Kali Ke-31 Tahun
+                        1444H/2022M telah diadakan pada 02 - 04 Oktober 2022 di Hotel Grand Riverview, Kota Bharu,
+                        Kelantan.</p>
                 </div>
                 <div class="annoucement-content-4">
                     <h3>SAMBUTAN HARI INOVASI KEMENTERIAN KESIHATAN MALAYSIA 2020</h3>
                     <img src="images/sambutan-hari-inovasi.jpeg" alt="sambutan-hari-inovasi" width="400px">
-                    <p>Tahniah diucapkan kepada pasukan dari Hospital Tengku Anis Pasir Puteh yang memenangi Anugerah Perdana Inovasi 2020 pada majlis Sambutan Hari Inovasi Kementerian Kesihatan Malaysia pada 26 Mac 2021.
+                    <p>Tahniah diucapkan kepada pasukan dari Hospital Tengku Anis Pasir Puteh yang memenangi Anugerah
+                        Perdana Inovasi 2020 pada majlis Sambutan Hari Inovasi Kementerian Kesihatan Malaysia pada 26
+                        Mac 2021.
 
-                        Kumpulan TA Power telah menghasilkan katil berdiri untuk senaman fisioterapi bagi membantu rawatan pemulihan pesakit kanak-kanak istimewa.</p>
+                        Kumpulan TA Power telah menghasilkan katil berdiri untuk senaman fisioterapi bagi membantu
+                        rawatan pemulihan pesakit kanak-kanak istimewa.</p>
                 </div>
-            </div>       
+            </div>
         </div>
 
         <!-- MAIN SERVICE PROVIDED -->
         <div class="main-service">
-            <div class="content-title"><h2>PERKHIDMATAN UTAMA</h2></div>
+            <div class="content-title">
+                <h2>PERKHIDMATAN UTAMA</h2>
+            </div>
             <div class="main-service-content">
                 <div class="service-card">
                     <h3><a href="https://www.moh.gov.my/index.php/edirectory/member_list/85/1">KESIHATAN AWAM</a></h3>
                     <img src="images/kesihatan-awam.jpeg" alt="kesihatan-awam">
-                </div>   
+                </div>
                 <div class="service-card">
                     <h3><a href="https://www.moh.gov.my/index.php/pages/view/270?mid=248">PERUBATAN</a></h3>
                     <img src="images/perubatan.jpg" alt="perubatan">
-                </div>   
+                </div>
                 <div class="service-card">
                     <h3><a href="https://ohd.moh.gov.my/index.php/ms/">PERGIGIAN</a></h3>
                     <img src="images/pergigian.jpeg" alt="pergigian">
-                </div>   
+                </div>
                 <div class="service-card">
                     <h3><a href="https://www.pharmacy.gov.my/v2/ms">FARMASI</a></h3>
                     <img src="images/farmasi.jpg" alt="farmasi">
-                </div>   
-            </div>   
+                </div>
+            </div>
         </div>
 
         <!-- FACEBOOK AND TWITTER FEED -->
         <div class="feed-container">
             <div class="feed-content" id="facebook-feed">
                 <h3>facebook</h3>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHealthOfKelantan&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" frameborder="0" ></iframe>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHealthOfKelantan&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                    frameborder="0"></iframe>
             </div>
             <div class="feed-content" id="twiter-feed">
                 <h3>twitter</h3>
-                <iframe src="https://syndication.twitter.com/srv/timeline-profile/screen-name/KKMPutrajaya?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc192ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19nb3ZfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYnVzaW5lc3NfYWZmaWxpYXRlX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2Zyb250ZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH19&frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=500px&origin=https%3A%2F%2Fjknkelantan.moh.gov.my%2Fv3%2F&sessionId=6aa95498aecaa447a278cd06e68d16a75bbb7970&showHeader=true&showReplies=false&transparent=false&widgetsVersion=aaf4084522e3a%3A1674595607486"" frameborder="0"></iframe>
+                <iframe
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/KKMPutrajaya?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc192ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19nb3ZfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYnVzaW5lc3NfYWZmaWxpYXRlX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2Zyb250ZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH19&frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=500px&origin=https%3A%2F%2Fjknkelantan.moh.gov.my%2Fv3%2F&sessionId=6aa95498aecaa447a278cd06e68d16a75bbb7970&showHeader=true&showReplies=false&transparent=false&widgetsVersion=aaf4084522e3a%3A1674595607486"" frameborder="
+                    0"></iframe>
             </div>
         </div>
 
@@ -153,8 +240,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div><p>© 2021 Jabatan Kesihatan Negeri Kelantan. Hakcipta Terpelihara</p></div>
+            <div>
+                <p>© 2021 Jabatan Kesihatan Negeri Kelantan. Hakcipta Terpelihara</p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
