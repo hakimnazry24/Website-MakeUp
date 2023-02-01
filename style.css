@@ -183,9 +183,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
 
 /* STYLING FOR CONTACT PAGE */
 /* WRITTEN BY WRITTEN BY MUHAMMAD AMIRUL ASYRAF BIN MOHD KAMAL 2115565 */
+.contact{
+    background-color: white;
+    display: flex;
+    padding: 50px;
+}
 
-
-
-
-
-
+.contact h3{
+    padding-bottom: 10px;
+    color: rgb(19, 150, 150);
+}
+.contact-content{
+    margin-left: 100px;
+    color: rgb(19, 150, 150);
+}
