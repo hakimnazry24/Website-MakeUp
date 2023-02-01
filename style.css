@@ -10,7 +10,7 @@ body{
     font-weight: 400;
     
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     line-height: 1;
     word-break: break-word;
     word-wrap: break-word;
@@ -21,8 +21,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
 /* WRITTEN BY MUHAMMAD HAKIM BIN MD NAZRI 2110457 */
 
 .menu-content-top{
-    margin: 20px 40px 20px 40px;
-    
+    margin: 20px 40px 20px 40px;   
 }
 .navbar-brand{
     margin: 20px 40px 20px 40px;
@@ -171,6 +170,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
 .footer-top{
     background-color: #254DA8;
     display: flex;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.48;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
 }
 
 .contact-info{
@@ -198,6 +202,84 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     color: rgb(19, 150, 150);
 }
 
-/* STYLING FOR EKSA PAGE */
-/* WRITTEN BY MEGAT AMMAR TAYYIB BIN SHAHRUL AFFENDI  2110365*/
+/* STYLING FOR FEEDBACK PAGE */
+/* WRITTEN BY AMIRUL ARFAN BIN SHAHRUL AFFENDI 2110365*/
 
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1c87c9;
+}
+.main-block h1{
+    color: black;
+    margin-bottom: 20px;
+}
+.main-block p{
+    color: black;
+}
+form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+}
+.fas {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #fff;
+}
+.fa-envelope {
+    transform: rotate(-20deg);
+}
+.fa-at , .fa-mail-bulk{
+    transform: rotate(10deg);
+}
+input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+input::placeholder {
+    color: #666;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+button:hover {
+    background: #2371a0;
+} 
+
+@media (min-width: 568px) {
+.main-block {
+    flex-direction: row;
+}
+.left-part, form {
+    width: 50%;
+}
+.fa-envelope {
+    margin-top: 0;
+    margin-left: 20%;
+}
+.fa-at {
+    margin-top: -10%;
+    margin-left: 65%;
+}
+.fa-mail-bulk {
+    margin-top: 2%;
+    margin-left: 28%;
+}
+}
+
+/* STYLING FOR EKSA PAGE */
+/* WRITTEN BY MEGAT AMMAR TAYYIB BIN SHAHRUL AFFENDI 2110365 */
