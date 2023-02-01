@@ -1,5 +1,7 @@
-# website_make_up
-Group name: JKN Kelantan
+# Website Makeup
+
+Abstract:
+This repository features our group project for Web Technology course at IIUM. The project is about finding a poor designed website available in Internet, then recreate a better design of the website using pure HTML, CSS and Javascript. 
 
 Members:
 1) Muhammad Hakim bin Md Nazri 2110457
