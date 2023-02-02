@@ -182,15 +182,19 @@ h6,
     background-color: white;
 }
 
-.annoucement-content {
-    display: grid;
-
+.annoucement-content-wrapper {
+    display: grid;  
     grid-template-areas:
         "content1 content2"
         "content3 content4";
     background-color: rgb(19, 150, 150);
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
+}
+.annoucement-content{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
 .annoucement-content h3 {
@@ -207,32 +211,22 @@ h6,
     padding-left: 30px;
 }
 
-.annoucement-content-1 {
+#annoucement-content-1 {
     grid-area: content1;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
 }
 
-.annoucement-content-2 {
+#annoucement-content-2 {
     grid-area: content2;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
 }
 
-.annoucement-content-3 {
+#annoucement-content-3 {
     grid-area: content3;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
+    
 }
 
-.annoucement-content-4 {
+#annoucement-content-4 {
     grid-area: content4;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
+  
 }
 
 .main-service {
