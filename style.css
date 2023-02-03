@@ -84,6 +84,11 @@ h6,
     position: relative;
     margin: auto;
 }
+.epsa-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -502,3 +507,15 @@ button:hover {
 
 /* STYLING FOR EPSA PAGE */
 /* WRITTEN BY MEGAT AMMAR TAYYIB BIN SHAHRUL AFFENDI 2110365 */
+
+.epsa-title{
+    background-color: #254da8;
+    text-align: center;
+    padding: 2% 10% 2% 10%;
+    margin: 2% 0 ;
+}
+.mySlides h1{
+    color: #254da8;
+    margin: 2%;
+    text-align: center;
+}
