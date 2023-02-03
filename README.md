@@ -1,9 +1,9 @@
 # Website Makeup
 
-##Abstract:
+Abstract:
 This repository features our group project for Web Technology course at IIUM. The project is about finding a poor designed website available in Internet, then recreate a better design of the website using pure HTML, CSS and Javascript. 
 
-Initial design: \n
+Original design: 
 https://jknkelantan.moh.gov.my/v3/
 
 Members:
