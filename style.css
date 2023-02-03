@@ -183,7 +183,7 @@ h6,
 }
 
 .annoucement-content-wrapper {
-    display: grid;  
+    display: grid;
     grid-template-areas:
         "content1 content2"
         "content3 content4";
@@ -191,7 +191,8 @@ h6,
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
 }
-.annoucement-content{
+
+.annoucement-content {
     border-style: solid;
     border-color: white;
     border-width: 1px;
@@ -221,12 +222,10 @@ h6,
 
 #annoucement-content-3 {
     grid-area: content3;
-    
 }
 
 #annoucement-content-4 {
     grid-area: content4;
-  
 }
 
 .main-service {
@@ -416,6 +415,90 @@ button:hover {
 
 /* STYLING FOR EKSA PAGE */
 /* WRITTEN BY MEGAT AMMAR TAYYIB BIN SHAHRUL AFFENDI 2110365 */
+.eksa-main-content p{
+    font-size: 1.3rem;
+    line-height: 50px;
+}
+.eksa-title {
+    background-color: #254da8;
+    text-align: center;
+    padding: 2% 10% 2% 10%;
+}
+
+.eksa-logo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 150, 150);
+    padding: 2% 10% 2% 10%;
+}
+
+.eksa-logo img {
+    width: 300px;
+}
+
+.eksa-dasar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    background-color: rgb(19, 150, 150);
+    padding: 2% 10% 2% 10%;
+}
+
+.eksa-dasar img {
+    width: 30%;
+}
+
+.eksa-objective {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 150, 150);
+    text-align: left;
+    align-items: center;
+    padding: 20px 70px 20px 70px;
+}
+
+.eksa-objective img {
+    width: 40%;
+    margin-left: 2%;
+}
+
+.eksa-objective li {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.eksa-garis-panduan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 150, 150);
+    padding: 10px 0 10px 0;
+}
+
+.eksa-garis-panduan a {
+    text-decoration: none;
+    color: white;
+    
+}
+.eksa-garis-panduan a:hover{
+    background-color: black;
+    color: white;
+}
+
+.eksa-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 150, 150);
+    padding: 10px 0 10px 0;
+}
+
+.eksa-chart img {
+    width: 80%;
+}
 
 /* STYLING FOR EPSA PAGE */
 /* WRITTEN BY MEGAT AMMAR TAYYIB BIN SHAHRUL AFFENDI 2110365 */
